@@ -1,8 +1,437 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>AJ</title>
+
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <title>Akshay Joshi</title>
+
+      <!-- Bootstrap Core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom CSS -->
+      <link href="css/stylish-portfolio.css" rel="stylesheet">
+      <link href="css/aj.css" rel="stylesheet">
+
+      <!-- Custom Fonts -->
+      <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="font-mfizz-2.3.0/font-mfizz.css">
+      <link rel="stylesheet" href="devicon/devicon.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!-- Get jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script>
+    $(function(){
+
+        $("#typed").typed({
+            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 40,
+            backDelay: 500,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>
+    <link href="main.css" rel="stylesheet"/>
+    <style>
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+    </style>
 </head>
 <body>
-<h1>Website Under Construction</h1>
-<img src ="./img.gif">
+  <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+  <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+          <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+          <li class="sidebar-brand">
+              <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+          </li>
+          <li>
+              <a href="#top" onclick=$("#menu-close").click();>Home</a>
+          </li>
+          <li>
+              <a href="#about" onclick=$("#menu-close").click();>About</a>
+          </li>
+          <li>
+              <a href="#services" onclick=$("#menu-close").click();>Technical Skills</a>
+          </li>
+          <li>
+              <a href="#portfolio" onclick=$("#menu-close").click();>Projects</a>
+          </li>
+          <li>
+            <a href="#resume" onclick=$("#menu-close").click();>Resume</a>
+          </li>
+          <li>
+            <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+          </li>
+      </ul>
+  </nav>
+
+  <!-- Header -->
+  <header id="top" class="header">
+      <div class="text-vertical-center">
+          <h1>Akshay Joshi</h1>
+          <h6>
+              <div id="typed-strings">
+                  <span>back-end developer: <strong>C#.NET, C++, Python, javascripts</strong></span>
+                  <p>front-end developer: <strong>angularJS, jQuery, Bootstrap, HTML/CSS</strong></p>
+                  <p>Full Stack Software Engineer</p>
+              </div>
+              <span id="typed" style="white-space:pre;"></span>
+          </h6>
+          <br>
+          <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+      </div>
+  </header>
+  <!-- About -->
+  <section id="about" class="about">
+    <!--Akshay Joshi profile pic-->
+    <div id="content">
+      <img src="img/aj.jpg" height="400" width="400" alt="..."/>
+      <div class="text-center">
+      <h2>Akshay Prakash Joshi,</h2>
+      <h4>M.S in Computer Science<h4>
+      <p>I work as a Software Developer Intern at Sungard K-12(FIS). Software Engineering is my passion, I apply innovative and logical approaches to solve complex problems. I have worked on projects that testify my skill in various programming languages.</p>
+    </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                <hr class="">
+                <h1>Experince<h1>
+                <h2>Sungard K-12 (FIS)</h2>
+                <p class="lead">Software Developer Intern May 2016 - present</p>
+                <h2>California State University, Chico</h2>
+                <p class="lead">Instructional Assistant June 2015 - May 2016</p>
+                  <hr class="">
+                  <h1>Education<h1>
+                  <h2>Master's in Computer Science</h2>
+                  <p class="lead">California State University, Chico</p>
+                  <h2>Bachelor's in Electronics Engineering</h2>
+                  <p class="lead">University of Pune, India</p>
+                </hr>
+              </div>
+          </div>
+      </div>
+          <!-- /.row -->
+    </div>
+      <!-- /.container -->
+  </section>
+
+  <!-- Services -->
+  <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+  <section id="services" class="services bg-primary">
+      <div class="container">
+          <div class="row text-center">
+              <div class="col-lg-12 text-center">
+                  <h2>Technical Skills</h2>
+                  <hr class="">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="service-item">
+                              <span class="fa-stack fa-5x">
+                              <i class="fa icon-cplusplus fa-stack-5x"></i>
+                          </span>
+                              <h4>
+                                  <strong>Programming languages:</strong>
+                              </h4>
+                              <p>C++, C, Python, C#.NET, javascript, AngularJS, SQL, COBOL</p>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="service-item">
+                              <span class="fa-stack fa-5x">
+                              <i class="fa devicon-html5-plain-wordmark fa-stack-5x"></i>
+                          </span>
+                              <h4>
+                                  <strong>Web Development: </strong>
+                              </h4>
+                              <p>HTML5/CSS, Bootstrap, jQuery,XML, AJAX</p>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="service-item">
+                              <span class="fa-stack fa-5x">
+                              <i class="fa devicon-linux-plain fa-stack-5x"></i>
+                          </span>
+                              <h4>
+                                  <strong>Operating Systems:</strong>
+                              </h4>
+                              <p>Ubuntu, HP-UX 11.11, Kali, CentOS, Mac OSX, Windows 07, 10, Windows server 2012 R2</p>
+                          </div>
+                      </div>
+                      <div class="col-md-6 text-center">
+                          <div class="service-item">
+                              <span class="fa-stack fa-5x">
+                              <i class="fa icon-database fa-stack-8x"></i>
+                          </span>
+                              <h4>
+                                  <strong>Database used:</strong>
+                              </h4>
+                              <p>SQL DB, MongoDB, DynamoDB</p>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="service-item">
+                              <span class="fa-stack fa-5x">
+                              <i class="fa icon-antenna fa-stack-5x"></i>
+                          </span>
+                              <h4>
+                                  <strong>Network skill:</strong>
+                              </h4>
+                              <p>BGP, DNS, TCP/IP, VLANS, DHCP, creating and managing VPCs</p>
+                          </div>
+                      </div>
+                  </div
+                </hr>
+                  <!-- /.row (nested) -->
+              </div>
+              <!-- /.col-lg-10 -->
+          </div>
+          <!-- /.row -->
+      </div>
+      <!-- /.container -->
+  </section>
+  <!-- Callout -->
+  <aside class="callout">
+      <div class="text-vertical-center">
+          <h1>Projects</h1>
+      </div>
+  </aside>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-10 col-lg-offset-1 text-center">
+                  <h2>Projects</h2>
+                  <hr class="small">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="portfolio-item">
+                              <a href="https://play.google.com/store/apps/details?id=com.aks.github&hl=en" target="_blank">
+                                    <img class="img-portfolio img-responsive" src="img/androidd.png" height="380" width="400">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="portfolio-item">
+                              <a href="https://bitbucket.org/akshayjoshi/611project/src/f300a90aea931c341b66cadb52d6b9372e8bfdbe/project1/src/?at=master" target="_blank">
+                                  <img class="img-portfolio img-responsive" src="img/goldchase.png" height="380" width="400">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="portfolio-item">
+                              <a href="https://bitbucket.org/akshayjoshi/python-codes/src" target="_blank">
+                                  <img class="img-portfolio img-responsive" src="img/py.jpg" height="380" width="400">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="portfolio-item">
+                              <a href="https://bitbucket.org/akshayjoshi/csci-511/src/0f08c0d5a9d640d7f499bd4ae9f2c6561684d6db/OOPS_String_substi/?at=master" target="_blank">
+                                  <img class="img-portfolio img-responsive" src="img/oop.jpg" height="380" width="400">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- /.row (nested) -->
+                  <a href="https://bitbucket.org/akshayjoshi/" target="_blank" class="btn btn-dark">View All Projects</a>
+              </div>
+              <!-- /.col-lg-10 -->
+          </div>
+          <!-- /.row -->
+      </div>
+      <!-- /.container -->
+  </section>
+
+  <!-- Call to Action -->
+  <aside class="call-to-action bg-primary">
+    <section id="resume" class="resume">
+
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h3>The buttons below are impossible to resist.</h3>
+                  <a href="PDF/Resume Akshay Joshi.pdf" target="_blank" class="btn btn-lg btn-light">Resume .pdf</a>
+              </div>
+          </div>
+      </div>
+    </section>
+  </aside>
+
+  <!-- Map -->
+  <section id="contact" class="map">
+  <!-- Footer -->
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-10 col-lg-offset-1 text-center">
+                  <h3><strong>Akshay Joshi</strong>
+                  </h3>
+                  <h4>
+                  <p>Chico, CA 95926</p>
+                  <ul class="list-unstyled">
+                      <li><i class="fa fa-phone fa-fw"></i> (469) 442-8159</li>
+                      <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:joshiaks91@gmail.com">joshiaks91@gmail.com</a>
+                      </li>
+                  </ul>
+                  <br>
+                  <ul class="list-inline">
+                      <li>
+                          <a href="https://www.linkedin.com/in/joshiakshay1" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                      </li>
+                      <li>
+                          <a href="https://bitbucket.org/akshayjoshi/" target="_blank"><i class="fa fa-bitbucket fa-fw fa-3x"></i></a>
+                      </li>
+                      <li>
+                          <a href="https://github.com/joshiakshay91" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                      </li>
+                  </ul>
+                  <hr class="small">
+                  <p class="text-muted">Copyright &copy; joshiakshay.com 2016</p>
+                </h4>
+              </div>
+          </div>
+      </div>
+      <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+  </footer>
+</section>
+  <script>
+  // Closes the sidebar menu
+  $("#menu-close").click(function(e) {
+      e.preventDefault();
+      $("#sidebar-wrapper").toggleClass("active");
+  });
+  // Opens the sidebar menu
+  $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#sidebar-wrapper").toggleClass("active");
+  });
+  // Scrolls to the selected menu item on the page
+  $(function() {
+      $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              if (target.length) {
+                  $('html,body').animate({
+                      scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+              }
+          }
+      });
+  });
+  //#to-top button appears after scrolling
+  var fixed = false;
+  $(document).scroll(function() {
+      if ($(this).scrollTop() > 250) {
+          if (!fixed) {
+              fixed = true;
+              // $('#to-top').css({position:'fixed', display:'block'});
+              $('#to-top').show("slow", function() {
+                  $('#to-top').css({
+                      position: 'fixed',
+                      display: 'block'
+                  });
+              });
+          }
+      } else {
+          if (fixed) {
+              fixed = false;
+              $('#to-top').hide("slow", function() {
+                  $('#to-top').css({
+                      display: 'none'
+                  });
+              });
+          }
+      }
+  });
+  // Disable Google Maps scrolling
+  // See http://stackoverflow.com/a/25904582/1607849
+  // Disable scroll zooming and bind back the click event
+  var onMapMouseleaveHandler = function(event) {
+      var that = $(this);
+      that.on('click', onMapClickHandler);
+      that.off('mouseleave', onMapMouseleaveHandler);
+      that.find('iframe').css("pointer-events", "none");
+  }
+  var onMapClickHandler = function(event) {
+          var that = $(this);
+          // Disable the click handler until the user leaves the map area
+          that.off('click', onMapClickHandler);
+          // Enable scrolling zoom
+          that.find('iframe').css("pointer-events", "auto");
+          // Handle the mouse leave event
+          that.on('mouseleave', onMapMouseleaveHandler);
+      }
+      // Enable map zooming with mouse scroll when the user clicks the map
+  $('.map').on('click', onMapClickHandler);
+  </script>
+
+
 </body>
+</html>
